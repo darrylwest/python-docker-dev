@@ -5,9 +5,16 @@
 
 set -eu
 
-curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y
+[ -x .cargo/bin/cargo ] || {
+    curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y
+    cargo install lsd
+    cargo install just
+}
 
-cargo install lsd ruff
+for p in pipx invoke ruff rich
+do
+    python -m pip install --user $p
+done
 
 exit $?
 
