@@ -3,7 +3,7 @@
 # 2017-06-21 13:21:26
 #
 
-export PATH="$PATH:$HOME/.local/bin"
+export PATH="$PATH:$HOME/.local/bin:$HOME/.cargo/bin"
 
 set -o vi
 

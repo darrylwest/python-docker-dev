@@ -12,7 +12,12 @@ RUN apt-get update && apt-get install -y \
 
 RUN useradd --create-home dpw
 
-RUN tar xvzf install.tgz
+ADD install.tgz /
+
+WORKDIR /home/dpw
+
+RUN curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y
+
 
 EXPOSE 8888
 

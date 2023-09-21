@@ -3,6 +3,8 @@
 # 2018.01.25
 #
 
+set -eu
+
 PWD=`pwd`
 file="$PWD/install.tgz"
 
@@ -11,4 +13,4 @@ file="$PWD/install.tgz"
     tar czvf $file home
 )
 
-# docker build -t python3.11:latest .
+docker build -t python3.11:latest .
