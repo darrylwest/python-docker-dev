@@ -15,7 +15,7 @@ file="$PWD/install.tgz"
 
 (
     cd ..
-    tar czvf $file home
+    tar czvf $file --user=1000 --group=1000 home
 )
 
 docker build \
