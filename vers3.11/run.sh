@@ -9,5 +9,5 @@ export NAME="python3.11"
 
 # -v "$PWD":/home/dpw/
 
-docker run -it -d -u dpw --name $NAME $NAME
+docker run -it -d -u dpw --name $NAME "darrylwest/$NAME"
 
