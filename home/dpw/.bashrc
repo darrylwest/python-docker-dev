@@ -18,7 +18,7 @@ alias lc='/bin/ls -c'
 alias l='/bin/ls -la'
 alias lh='/bin/ls -lt | head -50'
 
-alias vi=/usr/bin/vim
+[ -x /usr/bin/nvim ] && alias vi=/usr/bin/nvim
 
 alias ut='exit'
 

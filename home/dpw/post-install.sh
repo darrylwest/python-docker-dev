@@ -9,6 +9,7 @@ set -eu
     curl --proto '=https' --tlsv1.2 https://sh.rustup.rs -sSf | sh -s -- -y
     cargo install lsd
     cargo install just
+    cargo install ripgrep
 }
 
 for p in pipx poetry invoke ruff rich httpx
