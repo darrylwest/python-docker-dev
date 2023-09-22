@@ -5,7 +5,9 @@
 
 cd ~/raincity/python-projects/
 
-# -u dpw --name python3.11 -v "$PWD":/home/dpw/
+export NAME="python3.11"
 
-docker run -it -d -u dpw --name python3.11 python3.11
+# -v "$PWD":/home/dpw/
+
+docker run -it -d -u dpw --name $NAME $NAME
 

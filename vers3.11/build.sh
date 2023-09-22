@@ -5,6 +5,11 @@
 
 set -eu
 
+export VERSION=$( date +"%y.%m.%d" )
+export NAME="python3.11"
+export DOCKER_REPO=darrylwest
+export IMAGE="$DOCKER_REPO/$NAME"
+
 PWD=`pwd`
 file="$PWD/install.tgz"
 
@@ -13,4 +18,8 @@ file="$PWD/install.tgz"
     tar czvf $file home
 )
 
-docker build -t python3.11:latest .
+docker build \
+    -t $IMAGE:$VERSION \
+    -t $IMAGE:latest . 
+
+# && docker push $IMAGE:$VERSION
