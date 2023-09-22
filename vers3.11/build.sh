@@ -5,6 +5,11 @@
 
 set -eu
 
+[ uname -o -eq "Darwin" ] && {
+    echo "Don't build on osx.  build on debian linux"
+    exit 1
+}
+
 export VERSION=$( date +"%y.%m.%d" )
 export NAME="python3.11"
 export DOCKER_REPO=darrylwest
@@ -15,7 +20,7 @@ file="$PWD/install.tgz"
 
 (
     cd ..
-    tar czvf $file --user=1000 --group=1000 home
+    tar czvf $file home
 )
 
 docker build \
