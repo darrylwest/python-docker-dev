@@ -6,6 +6,7 @@
 * [ ] should install bpython with pip to get the correct version
 * [ ] change .motd banner to python 3.11 (correct version)
 * [x] add .ssh/known_hosts to home/dpw/
+* [x] run.sh broken missing full image name
 
-###### dpw | 2023.09.21
+###### dpw | 2023.09.22
 
