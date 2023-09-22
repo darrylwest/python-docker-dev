@@ -11,7 +11,7 @@ set -eu
     cargo install just
 }
 
-for p in pipx poetry invoke ruff rich
+for p in pipx poetry invoke ruff rich httpx
 do
     python -m pip install --user $p
 done
