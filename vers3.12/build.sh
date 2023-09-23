@@ -11,7 +11,7 @@ set -eu
 }
 
 export VERSION=$( date +"%y.%m.%d" )
-export NAME="python3.11"
+export NAME="python3.12"
 export DOCKER_REPO=darrylwest
 export IMAGE="$DOCKER_REPO/$NAME"
 
@@ -27,4 +27,4 @@ docker build \
     -t $IMAGE:$VERSION \
     -t $IMAGE:latest . 
 
-# && docker push $IMAGE:$VERSION
+echo "docker push $IMAGE:$VERSION"

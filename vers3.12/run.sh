@@ -5,7 +5,7 @@
 
 cd ~/raincity/python-projects/
 
-export NAME="python3.11"
+export NAME="python3.12"
 
 # -v "$PWD":/home/dpw/
 
