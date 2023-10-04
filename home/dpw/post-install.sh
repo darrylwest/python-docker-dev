@@ -12,7 +12,7 @@ set -eu
     cargo install ripgrep
 }
 
-for p in pipx poetry invoke ruff rich httpx black
+for p in pipx poetry invoke ruff rich httpx black isort bpython
 do
     python -m pip install --user $p
 done
