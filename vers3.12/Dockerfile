@@ -1,9 +1,9 @@
 #
 #
 #
-FROM python:3.12-rc-bookworm
+FROM python:3.12-bookworm
 
-LABEL maintainer="darryl.west" version="09.23.2023"
+LABEL maintainer="darryl.west" version="10.04.2023"
 
 RUN apt-get update && apt-get install -y \
     make binutils autoconf automake autotools-dev libtool pkg-config cmake \

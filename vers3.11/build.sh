@@ -27,4 +27,4 @@ docker build \
     -t $IMAGE:$VERSION \
     -t $IMAGE:latest . 
 
-# && docker push $IMAGE:$VERSION
+echo "docker push $IMAGE:$VERSION"
