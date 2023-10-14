@@ -5,7 +5,7 @@
 
 cd ~/raincity/python-projects/
 
-export NAME="mojo0.3.0"
+export NAME="mojo0.4.0"
 
 # -v "$PWD":/home/dpw/
 

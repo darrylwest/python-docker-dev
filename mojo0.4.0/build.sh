@@ -11,7 +11,7 @@ set -eu
 }
 
 export VERSION=$( date +"%y.%m.%d" )
-export NAME="mojo0.3.0"
+export NAME="mojo0.4.0"
 export DOCKER_REPO=darrylwest
 export IMAGE="$DOCKER_REPO/$NAME"
 
