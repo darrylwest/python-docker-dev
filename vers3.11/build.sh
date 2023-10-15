@@ -20,6 +20,7 @@ file="$PWD/install.tgz"
 
 (
     cd ..
+    figlet -w 140 -f chunky Python 3.11 > home/dpw/.motd
     tar czvf $file home
 )
 

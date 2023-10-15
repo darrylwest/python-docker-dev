@@ -15,11 +15,13 @@ export NAME="mojo0.4.0"
 export DOCKER_REPO=darrylwest
 export IMAGE="$DOCKER_REPO/$NAME"
 
+
 PWD=`pwd`
 file="$PWD/install.tgz"
 
 (
     cd ..
+    figlet -w 140 -f speed Mojo > home/dpw/.motd
     tar czvf $file home
 )
 
