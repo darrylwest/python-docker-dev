@@ -32,7 +32,7 @@ alias gac='git add . ; git commit -v'
 alias gpull='git pull'
 alias gpush='git push'
 
-alias mk='task-runner.py'
+alias mk='task-runner'
 [ -x .cargo/bin/lsd ] && alias l='lsd -lA'
 
 /usr/bin/cat ~/.motd
