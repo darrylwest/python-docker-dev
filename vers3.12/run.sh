@@ -9,5 +9,5 @@ export NAME="python3.12"
 
 # -v "$PWD":/home/dpw/
 
-docker run -it -d -u dpw --name $NAME "darrylwest/$NAME"
+docker run -it -d -u dpw --network=service-net --hostname=python3.12 --name $NAME "darrylwest/$NAME"
 
